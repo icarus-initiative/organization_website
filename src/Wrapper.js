@@ -1,6 +1,27 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: 'NunitoSans-Light';
+    src: url('/fonts/NunitoSans/NunitoSans-Light.ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'NunitoSans-Regular';
+    src: url('/fonts/NunitoSans/NunitoSans-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'NunitoSans-Bold';
+    src: url('/fonts/NunitoSans/NunitoSans-Bold.ttf');
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+  }
   html {
     --grey: #26262b;
     --gray: var(--grey);
@@ -8,6 +29,9 @@ const GlobalStyles = createGlobalStyle`
     --pageFontColor: var(--white);
     box-sizing: border-box;
     font-size: 62.5%;
+    --nunitoL: "NunitoSans-Light", sans-serif;
+    --nunitoR: "NunitoSans-Regular", sans-serif;
+    --nunitoB: "NunitoSans-Bold", sans-serif;
   }
   *, *:before, *:after {
     box-sizing: inherit;
