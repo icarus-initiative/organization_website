@@ -23,12 +23,15 @@ const GlobalStyles = createGlobalStyle`
     font-display: swap;
   }
   html {
-    --grey: #26262b;
-    --gray: var(--grey);
+    --grayL: #35363a;
+    --grayM: #2c2d30;
+    --grayD: #26262b;
     --white: #ffffff;
+    --purple:#8a27f3;
+    --teal: #02a9f8;
     --pageFontColor: var(--white);
-    box-sizing: border-box;
-    font-size: 62.5%;
+      box-sizing: border-box;
+      font-size: 62.5%;
     --nunitoL: "NunitoSans-Light", sans-serif;
     --nunitoR: "NunitoSans-Regular", sans-serif;
     --nunitoB: "NunitoSans-Bold", sans-serif;
@@ -37,12 +40,12 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-    background: var(--grey);
+    background: var(--grayD);
     color: var(--pageFontColor);
+    font-family: var(--nunitoR);
     padding: 0;
     margin: 0;
-    font-size: 1.6rem;
-    line-height:2;
+    font-size: 1.8rem;
   }
   h1 { font-size: 2.8rem; }
   h2 { font-size: 2.4rem; }
