@@ -26,6 +26,11 @@ const SocialsSection = styled.section`
   justify-content: space-around;
   align-items: center;
   width: 30%;
+  a:visited,
+  a:link {
+    outline: 0;
+    border: none;
+  }
 `;
 const NavSection = styled.section`
   display: flex;

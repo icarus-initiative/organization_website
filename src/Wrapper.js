@@ -50,6 +50,16 @@ const GlobalStyles = createGlobalStyle`
   h1 { font-size: 2.8rem; }
   h2 { font-size: 2.4rem; }
   h3 { font-size: 2rem; }
+  a:link, a:active {
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px dashed var(--purple);
+  }
+  a:visited {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid var(--white);
+  }
 `;
 const Wrapper = styled.main`
   text-align: center;
