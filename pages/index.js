@@ -4,7 +4,7 @@ import Banner from '../src/Banner';
 import FAQ from '../src/FAQ';
 import Footer from '../src/Footer';
 import Projects from '../src/Projects';
-import SiteNav from '../src/SiteNav';
+import Navigation from '../src/Navigation';
 import Squadrons from '../src/Squadrons';
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
         <title>Icarus Initiative</title>
       </Head>
 
-      <SiteNav />
+      <Navigation />
       <Banner />
       <About />
       <Squadrons />
