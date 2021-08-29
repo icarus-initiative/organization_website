@@ -1,16 +1,26 @@
 import Head from 'next/head';
-import Wrapper from '../src/Wrapper';
+import About from '../src/About';
+import Banner from '../src/Banner';
+import FAQ from '../src/FAQ';
+import Footer from '../src/Footer';
+import Projects from '../src/Projects';
+import SiteNav from '../src/SiteNav';
+import Squadrons from '../src/Squadrons';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Icarus Initiative</title>
       </Head>
 
-      <Wrapper>
-        <h1>Hello</h1>
-      </Wrapper>
-    </div>
+      <SiteNav />
+      <Banner />
+      <About />
+      <Squadrons />
+      <Projects />
+      <FAQ />
+      <Footer />
+    </>
   );
 }
