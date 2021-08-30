@@ -3,7 +3,7 @@ import About from '../src/About';
 import Banner from '../src/Banner';
 import FAQ from '../src/FAQ';
 import Footer from '../src/Footer';
-import Projects from '../src/Projects';
+import Process from '../src/Process';
 import Navigation from '../src/Navigation';
 import Squadrons from '../src/Squadrons';
 
@@ -18,8 +18,8 @@ export default function Home() {
       <Banner />
       <About />
       <Squadrons />
-      <Projects />
       <FAQ />
+      <Process />
       <Footer />
     </>
   );
