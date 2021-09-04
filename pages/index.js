@@ -5,7 +5,7 @@ import FAQ from '../src/FAQ';
 import Footer from '../src/Footer';
 import Process from '../src/Process';
 import Navigation from '../src/Navigation';
-import Squadrons from '../src/Squadrons';
+import Helm from '../src/Helm';
 
 export default function Home() {
   return (
@@ -17,9 +17,9 @@ export default function Home() {
       <Navigation />
       <Banner />
       <About />
-      <Squadrons />
-      <FAQ />
+      <Helm />
       <Process />
+      <FAQ />
       <Footer />
     </>
   );

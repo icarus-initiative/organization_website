@@ -18,5 +18,38 @@ export default function globals() {
     },
   };
 
-  return { socials };
+  const helm = {
+    discord: {
+      name: 'Radio Channels',
+      icon: '/discord_128.png',
+      link: 'https://discord.gg/9yYsQVYR3K',
+    },
+    discourse: {
+      name: 'Central Intelligence',
+      icon: '/column_128.png',
+      link: 'https://google.com',
+    },
+    icarus: {
+      name: 'Icarus Force',
+      icon: '/quill_128.png',
+      link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/README.md',
+    },
+    expeditions: {
+      name: 'Expeditions',
+      icon: '/compass_128.png',
+      link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/expeditions.md',
+    },
+    squadrons: {
+      name: 'Squadrons',
+      icon: '/jet_128.png',
+      link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/squadrons.md',
+    },
+    resources: {
+      name: 'Resources',
+      icon: '/books_128.png',
+      link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/resources.md',
+    },
+  };
+
+  return { socials, helm };
 }
