@@ -50,7 +50,7 @@ export default function Helm() {
   return (
     <Wrapper>
       <Section>
-        <H1>Helm</H1>
+        <H1>The Helm</H1>
         <Cards>
           <Card>
             <A

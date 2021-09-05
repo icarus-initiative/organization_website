@@ -30,6 +30,9 @@ const Card = styled.div`
   text-align: center;
   vertical-align: middle;
   align-self: center;
+  border-radius: 2%;
+  box-shadow: 1px 1px var(--teal);
+  border: 1px solid var(--purple);
 `;
 const CardIcon = styled.h1`
   font-size: 4.8rem;
