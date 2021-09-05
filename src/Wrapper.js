@@ -25,7 +25,8 @@ const GlobalStyles = createGlobalStyle`
   html {
     --grayL: #35363a;
     --grayM: #2c2d30;
-    --grayD: #26262b;
+    --grayMD: #26262b;
+    --grayD: #1a1a1d;
     --white: #ffffff;
     --purple:#8a27f3;
     --teal: #02a9f8;
@@ -40,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-    background: var(--grayD);
+    background: var(--grayMD);
     color: var(--pageFontColor);
     font-family: var(--nunitoR);
     padding: 0;
