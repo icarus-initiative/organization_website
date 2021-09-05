@@ -1,36 +1,23 @@
 import styled from 'styled-components';
 import Wrapper from './Wrapper';
+import Socials from './Socials';
 import Image from 'next/image';
 import Link from 'next/link';
-import globals from './data';
-import {
-  FaGithub,
-  FaDiscord,
-  FaYoutube,
-  FaTwitterSquare,
-} from 'react-icons/fa';
 
-const Main = styled.main`
+const Section = styled.section`
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  -webkit-box-shadow: 0 10px 6px -6px black;
+  -moz-box-shadow: 0 10px 6px -6px black;
+  box-shadow: 0 10px 6px -6px black;
+  background: var(--grayD);
 `;
 const Logo = styled.section`
   display: flex;
   width: 10%;
-`;
-const SocialsSection = styled.section`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 30%;
-  a:visited,
-  a:link {
-    outline: 0;
-    border: none;
-  }
 `;
 const NavSection = styled.section`
   display: flex;
@@ -39,33 +26,26 @@ const NavSection = styled.section`
   width: 35%;
   font-size: 2rem;
   font-family: var(--nunitoB);
-  span:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
 `;
-const Github = styled(FaGithub)`
-  color: #ffffff;
+const Link1 = styled(Link)`
+  border: 5px solid var(--grayMD);
 `;
-const Discord = styled(FaDiscord)`
-  color: #6e85d3;
-`;
-const Youtube = styled(FaYoutube)`
-  color: #f70000;
-`;
-const Twitter = styled(FaTwitterSquare)`
-  color: #0077b5;
-`;
-const A = styled.a`
+const Span = styled.span`
+  border: 5px solid var(--grayD);
+  padding: 1rem;
   &:hover {
-    transform: scale(1.2);
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--teal);
+    border-radius: 5px;
+    border: 5px outset var(--purple);
   }
 `;
 
 export default function Navigation() {
   return (
     <Wrapper>
-      <Main>
+      <Section>
         <Logo>
           <Image
             src='/purple_feather_256_min.png'
@@ -76,46 +56,26 @@ export default function Navigation() {
         </Logo>
         <Socials />
         <Nav />
-      </Main>
+      </Section>
     </Wrapper>
-  );
-}
-
-function Socials() {
-  const { socials } = globals();
-  return (
-    <SocialsSection>
-      <A href={socials.github.url} target='_blank'>
-        <Github size={30} title={socials.github.alt} />
-      </A>
-      <A href={socials.discord.url} target='_blank'>
-        <Discord size={30} title={socials.discord.alt} />
-      </A>
-      <A href={socials.youtube.url} target='_blank'>
-        <Youtube size={30} title={socials.youtube.alt} />
-      </A>
-      <A href={socials.twitter.url} target='_blank'>
-        <Twitter size={30} title={socials.twitter.alt} />
-      </A>
-    </SocialsSection>
   );
 }
 
 function Nav() {
   return (
     <NavSection>
-      <Link href='/'>
-        <span>&nbsp;About</span>
-      </Link>
-      <Link href='/learn'>
-        <span>&nbsp;Squadrons</span>
-      </Link>
-      <Link href='/deals'>
-        <span>&nbsp;Projects</span>
-      </Link>
-      <Link href='/about'>
-        <span>&nbsp;FAQs</span>
-      </Link>
+      <Link1 href='/'>
+        <Span>&nbsp;About</Span>
+      </Link1>
+      <Link1 href='/learn'>
+        <Span>&nbsp;Squadrons</Span>
+      </Link1>
+      <Link1 href='/deals'>
+        <Span>&nbsp;Projects</Span>
+      </Link1>
+      <Link1 href='/about'>
+        <Span>&nbsp;FAQs</Span>
+      </Link1>
     </NavSection>
   );
 }
