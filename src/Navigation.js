@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Wrapper from './Wrapper';
 import Socials from './Socials';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -44,36 +43,37 @@ const Span = styled.span`
 
 export default function Navigation() {
   return (
-    <Wrapper>
-      <Section>
-        <Logo>
-          <Image
-            src='/purple_feather_256_min.png'
-            alt='Icarus Initiative Logo'
-            width={100}
-            height={100}
-          />
-        </Logo>
-        <Socials />
-        <Nav />
-      </Section>
-    </Wrapper>
+    <Section>
+      <Logo>
+        <Image
+          src='/purple_feather_256_min.png'
+          alt='Icarus Initiative Logo'
+          width={100}
+          height={100}
+        />
+      </Logo>
+      <Socials />
+      <Nav />
+    </Section>
   );
 }
 
 function Nav() {
   return (
     <NavSection>
-      <Link1 href='/'>
+      <Link1 href='#about'>
         <Span>&nbsp;About</Span>
       </Link1>
-      <Link1 href='/learn'>
-        <Span>&nbsp;Squadrons</Span>
+      <Link1 href='#helm'>
+        <Span>&nbsp;Helm</Span>
       </Link1>
-      <Link1 href='/deals'>
-        <Span>&nbsp;Projects</Span>
+      <Link1 href='#process'>
+        <Span>&nbsp;Process</Span>
       </Link1>
-      <Link1 href='/about'>
+      <Link1 href='#enlist'>
+        <Span>&nbsp;Enlist</Span>
+      </Link1>
+      <Link1 href='#faqs'>
         <Span>&nbsp;FAQs</Span>
       </Link1>
     </NavSection>

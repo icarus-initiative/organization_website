@@ -6,7 +6,6 @@ const Section = styled.section`
 `;
 const H1 = styled.h1`
   font-size: 4.8rem;
-  color: var(--purple);
 `;
 const H3 = styled.h3`
   border-bottom: 5px solid var(--purple);
@@ -77,14 +76,20 @@ const Part2R = styled.div`
   border-radius: 5px;
 `;
 
+const Purplerize = styled.span`
+  color: var(--purple);
+`;
+
 export default function FAQ() {
   return (
     <Wrapper>
-      <Section>
+      <Section id='faqs'>
         <Partition>
           <Part1L></Part1L>
           <CenterColumn>
-            <H1>Frequently Asked Questions</H1>
+            <H1>
+              Frequently <Purplerize>Asked Questions</Purplerize>
+            </H1>
             <H3>What is the Icarus Iniative?</H3>
             <Ul>
               <Li>

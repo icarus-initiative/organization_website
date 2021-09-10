@@ -5,7 +5,6 @@ import globals from './data.js';
 const Section = styled.section``;
 const H1 = styled.h1`
   font-size: 4.8rem;
-  color: var(--purple);
 `;
 const Cards = styled.div`
   width: 50%;
@@ -44,13 +43,18 @@ const P = styled.p`
 `;
 const A = styled.a``;
 
+const Purplerize = styled.span`
+  color: var(--purple);
+`;
+
 export default function Helm() {
   const { helm } = globals();
-
   return (
     <Wrapper>
-      <Section>
-        <H1>The Helm</H1>
+      <Section id='helm'>
+        <H1>
+          The <Purplerize>Helm</Purplerize>
+        </H1>
         <Cards>
           <Card>
             <A
