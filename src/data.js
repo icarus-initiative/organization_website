@@ -1,20 +1,23 @@
 export default function globals() {
-  const socials = {
-    github: {
-      url: 'https://github.com/icarus-initiative',
-      alt: 'Icarus Initiative Github Organization',
+  const about = {
+    squadrons: {
+      name: 'Squadrons',
+      icon: 'fighter_128.png',
     },
-    discord: {
-      url: 'https://discord.gg/9yYsQVYR3K',
-      alt: 'Icarus Initiative Discord',
+    expeditions: {
+      name: 'Expeditions',
+      icon: 'mountain_128.png',
     },
-    youtube: {
-      url: 'https://www.youtube.com/channel/UCTurxUPFKUZARHQkihpMAfg',
-      alt: 'Icarus Initiative Youtube',
+    platforms: {
+      name: 'Platforms',
+      icon: 'carrier_128.png',
     },
-    twitter: {
-      url: 'https://twitter.com/icarusinit',
-      alt: 'Icarus Initiative Twitter',
+  };
+
+  const enlist = {
+    flag: {
+      name: 'Flag',
+      icon: 'flag_512.png',
     },
   };
 
@@ -41,7 +44,7 @@ export default function globals() {
     },
     squadrons: {
       name: 'Squadrons',
-      icon: '/jet_128.png',
+      icon: '/insignia_128.png',
       link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/squadrons.md',
     },
     resources: {
@@ -51,5 +54,24 @@ export default function globals() {
     },
   };
 
-  return { socials, helm };
+  const socials = {
+    github: {
+      url: 'https://github.com/icarus-initiative',
+      alt: 'Icarus Initiative Github Organization',
+    },
+    discord: {
+      url: 'https://discord.gg/9yYsQVYR3K',
+      alt: 'Icarus Initiative Discord',
+    },
+    youtube: {
+      url: 'https://www.youtube.com/channel/UCTurxUPFKUZARHQkihpMAfg',
+      alt: 'Icarus Initiative Youtube',
+    },
+    twitter: {
+      url: 'https://twitter.com/icarusinit',
+      alt: 'Icarus Initiative Twitter',
+    },
+  };
+
+  return { about, enlist, helm, socials };
 }
