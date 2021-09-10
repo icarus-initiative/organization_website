@@ -1,25 +1,28 @@
 import Head from 'next/head';
-import About from '../src/About';
+import Navigation from '../src/Navigation';
 import Banner from '../src/Banner';
+import About from '../src/About';
+import Enlist from '../src/Enlist';
+import Helm from '../src/Helm';
+import Process from '../src/Process';
 import FAQ from '../src/FAQ';
 import Footer from '../src/Footer';
-import Process from '../src/Process';
-import Navigation from '../src/Navigation';
-import Squadrons from '../src/Squadrons';
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Icarus Initiative</title>
+        <link rel='shortcut icon' href='/images/favicon.ico' />
       </Head>
 
       <Navigation />
       <Banner />
       <About />
-      <Squadrons />
-      <FAQ />
+      <Helm />
       <Process />
+      <Enlist />
+      <FAQ />
       <Footer />
     </>
   );

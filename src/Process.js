@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 import Wrapper from './Wrapper';
-// import Image from 'next/image';
 
 const Section = styled.section`
-  margin: 8rem auto;
+  margin: 0 auto;
   width: 80%;
   text-align: left;
   line-height: 2;
@@ -15,7 +14,6 @@ const Section = styled.section`
 `;
 const H1 = styled.h1`
   font-size: 4.8rem;
-  color: var(--purple);
 `;
 const Colorize = styled.span`
   color: var(--purple);
@@ -26,7 +24,6 @@ const Ul = styled.ul`
 const Li = styled.li`
   font-size: 2.4rem;
 `;
-const P = styled.p``;
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -37,7 +34,7 @@ const Card = styled.div`
   width: 47%;
   height: auto;
   margin: 0 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
   padding: 0 2rem;
   padding-bottom: 2rem;
   border-radius: 2%;
@@ -52,11 +49,16 @@ const CardDescription = styled.ul`
   margin: 0 auto;
 `;
 
+const Purplerize = styled.span`
+  color: var(--purple);
+`;
 export default function Process() {
   return (
     <Wrapper>
-      <Section>
-        <H1>The Process</H1>
+      <Section id='process'>
+        <H1>
+          The <Purplerize>Process</Purplerize>
+        </H1>
         <Ul>
           <Li>
             Icarus seeks pilots who are <Colorize>passionate</Colorize>,{' '}

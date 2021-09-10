@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Wrapper from './Wrapper';
 import Image from 'next/image';
 
 const Hero = styled.section`
@@ -30,18 +29,16 @@ const Subtitle = styled.p`
 
 export default function Banner() {
   return (
-    <Wrapper>
-      <Hero>
-        <Image1
-          src='/banner.jpg'
-          alt='Icarus Initiative Hero'
-          width={3360}
-          height={1080}
-          quality={100}
-        />
-        <Title>Icarus Initiative</Title>
-        <Subtitle>The Crowdsourced Solana/Rust Learning Initiative</Subtitle>
-      </Hero>
-    </Wrapper>
+    <Hero>
+      <Image1
+        src='/banner.jpg'
+        alt='Icarus Initiative Hero'
+        width={3360}
+        height={1080}
+        quality={100}
+      />
+      <Title>Icarus Initiative</Title>
+      <Subtitle>The Crowdsourced Solana/Rust Learning Initiative</Subtitle>
+    </Hero>
   );
 }

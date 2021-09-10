@@ -1,21 +1,16 @@
 import styled from 'styled-components';
 import Wrapper from './Wrapper';
+import globals from './data.js';
 
 const Section = styled.section`
-  margin: 15rem auto;
   width: 80%;
+  margin: 0 auto;
 `;
 const Hook = styled.div`
-  line-height: 0.5;
+  font-size: 4.8rem;
 `;
 const H1 = styled.h1`
   font-size: 4.8rem;
-  font-family: var(--nunitoL);
-`;
-const H2 = styled.h1`
-  font-size: 4.8rem;
-  color: var(--purple);
-  font-family: var(--nunitoL);
 `;
 const Cards = styled.div`
   display: flex;
@@ -30,9 +25,17 @@ const Card = styled.div`
   text-align: center;
   vertical-align: middle;
   align-self: center;
+  border-radius: 2%;
+  box-shadow: 1px 1px var(--teal);
+  border: 1px solid var(--purple);
 `;
-const CardIcon = styled.h1`
-  font-size: 4.8rem;
+const CardIcon = styled.aside`
+  background-image: url(${(props) => props.icon});
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 128px;
+  height: 128px;
+  margin: 2rem auto;
 `;
 const CardTitle = styled.h3`
   font-size: 2.4rem;
@@ -43,18 +46,25 @@ const CardDescription = styled.ul`
   width: 90%;
   text-align: left;
 `;
+const Purplerize = styled.span`
+  color: var(--purple);
+`;
 
 export default function About() {
+  const { about } = globals();
   return (
     <Wrapper>
-      <Section>
+      <Section id='about'>
         <Hook>
-          <H1>Level up with the squad and</H1>
-          <H2>vote on curriculum development</H2>
+          <H1>
+            Level up with the squad and
+            <br />
+            <Purplerize>vote on curriculum development</Purplerize>
+          </H1>
         </Hook>
         <Cards>
           <Card>
-            <CardIcon>👨‍✈️👩‍✈️</CardIcon>
+            <CardIcon icon={about.squadrons.icon} />
             <CardTitle>Squadrons</CardTitle>
             <CardDescription>
               <li>
@@ -72,12 +82,12 @@ export default function About() {
             </CardDescription>
           </Card>
           <Card>
-            <CardIcon>🌄</CardIcon>
+            <CardIcon icon={about.expeditions.icon} />
             <CardTitle>Expeditions</CardTitle>
             <CardDescription>
               <li>
-                Build a basic wallet, NFT platform, and RPG game. Where will
-                your squad decide to go?
+                Build a basic wallet, smart contracts, NFT platform, and RPG
+                game. Where will your squad decide to go?
               </li>
               <li>
                 Use verified resources that have been vetted by pilots flying
@@ -91,7 +101,7 @@ export default function About() {
             </CardDescription>
           </Card>
           <Card>
-            <CardIcon>📚</CardIcon>
+            <CardIcon icon={about.platforms.icon} />
             <CardTitle>Platforms</CardTitle>
             <CardDescription>
               <li>Use moderated platforms to collaborate and learn.</li>
@@ -100,7 +110,8 @@ export default function About() {
                 Use Github, Discord, Discourse to capture crowd knowledge.
               </li>
               <li>
-                Be excited about future partnerships and incentives as we grow.
+                Build excitement around future partnerships and incentives as we
+                grow.
               </li>
             </CardDescription>
           </Card>

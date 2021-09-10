@@ -25,7 +25,8 @@ const GlobalStyles = createGlobalStyle`
   html {
     --grayL: #35363a;
     --grayM: #2c2d30;
-    --grayD: #26262b;
+    --grayMD: #26262b;
+    --grayD: #1a1a1d;
     --white: #ffffff;
     --purple:#8a27f3;
     --teal: #02a9f8;
@@ -40,14 +41,16 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-    background: var(--grayD);
+    background: var(--grayMD);
     color: var(--pageFontColor);
     font-family: var(--nunitoR);
     padding: 0;
     margin: 0;
     font-size: 1.8rem;
   }
-  h1 { font-size: 2.8rem; }
+  h1 { 
+    font-size: 2.8rem; 
+  }
   h2 { font-size: 2.4rem; }
   h3 { font-size: 2rem; }
   a:link, a:active {
@@ -63,6 +66,7 @@ const GlobalStyles = createGlobalStyle`
 `;
 const Wrapper = styled.main`
   text-align: center;
+  margin: 15rem auto;
 `;
 
 export default function Page({ data, children }) {
