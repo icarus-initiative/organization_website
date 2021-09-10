@@ -48,7 +48,9 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     font-size: 1.8rem;
   }
-  h1 { font-size: 2.8rem; }
+  h1 { 
+    font-size: 2.8rem; 
+  }
   h2 { font-size: 2.4rem; }
   h3 { font-size: 2rem; }
   a:link, a:active {
@@ -64,6 +66,7 @@ const GlobalStyles = createGlobalStyle`
 `;
 const Wrapper = styled.main`
   text-align: center;
+  margin: 15rem auto;
 `;
 
 export default function Page({ data, children }) {
