@@ -37,4 +37,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Deploy on Digital Ocean
 
-1. Add scrip: `"export": "npm run build && next export -o _static"`
+- [Guide](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-next-js-app-to-app-platform)
+- Deployed as custom server.
+
+1. Add script: `"start": "next start -H 0.0.0.0 -p ${PORT:-8080}"`
+2. DO needs lock file included.
