@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
-const Hero = styled.section`
+const Section = styled.section`
   position: relative;
   text-align: center;
   color: white;
@@ -29,16 +29,17 @@ const Subtitle = styled.p`
 
 export default function Banner() {
   return (
-    <Hero>
+    <Section>
       <Image1
-        src='/banner.jpg'
+        src='/banner.webp'
         alt='Icarus Initiative Hero'
         width={3360}
         height={1080}
         quality={100}
+        priority={true}
       />
       <Title>Icarus Initiative</Title>
       <Subtitle>The Crowdsourced Solana/Rust Learning Initiative</Subtitle>
-    </Hero>
+    </Section>
   );
 }

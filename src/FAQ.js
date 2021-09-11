@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Wrapper from './Wrapper';
+import globals from './data';
 
 const Section = styled.section`
   margin-bottom: 2rem;
@@ -81,6 +82,7 @@ const Purplerize = styled.span`
 `;
 
 export default function FAQ() {
+  const { faq } = globals();
   return (
     <Wrapper>
       <Section id='faqs'>
@@ -103,26 +105,14 @@ export default function FAQ() {
               </Li>
             </Ul>
 
-            <H3>What is the Icarus Iniative?</H3>
-            <Ul>
-              <Li>
-                A zero-cost, crowdsource community of Rust/Solana learners that
-                iteratively improve the curriculum by building projects,
-                evaluating resources, and voting on curriculum development.
-              </Li>
-              <Li>
-                This initiative came about due to the myriad of resources that
-                can often leave the uninitiated lost on their learning path.
-              </Li>
-            </Ul>
-
             <H3>What are the requirements to join the Icarus Iniative?</H3>
             <Ul>
               <Li>
                 The developer must already have completed{' '}
                 <a
-                  href='https://learn.figment.io/protocols/solana'
-                  alt='Icarus Initiative Main'
+                  href={faq.figment.url}
+                  title={faq.figment.title}
+                  rel='noopener noreferrer nofollow'
                   target='_blank'
                 >
                   Figment's Solana Protocol
@@ -134,11 +124,12 @@ export default function FAQ() {
                 To get a better idea, get a sample of the minimum skills for the
                 1st project listed more in depth in the{' '}
                 <a
-                  href='https://github.com/icarus-initiative/icarus_initiative/blob/main/1st_expedition_project_guildeline.md'
-                  alt='Icarus Initiative Main'
+                  href={faq.walletGuidelines.url}
+                  title={faq.walletGuidelines.title}
+                  rel='noopener noreferrer nofollow'
                   target='_blank'
                 >
-                  1st Expedition Project Guidelines
+                  1st Expedition Wallet Guidelines
                 </a>
                 .
               </Li>
@@ -206,8 +197,8 @@ export default function FAQ() {
               <Li>
                 <strong>Admin</strong> - Set up systems and infrastructure for
                 squads and the organization, optimize systems to demystify
-                knowledge and make more accessible, and handle any public
-                relations.
+                knowledge and increase accessibility, and helps construct the
+                organization.
               </Li>
             </Ul>
           </CenterColumn>
@@ -233,14 +224,24 @@ export default function FAQ() {
               <Li>
                 At least one of the members will be the captain, who will
                 delegate and serve as a representive for the squadron. It's
-                recommended that there's 2 captains to make the squad flow with
-                major hitches. They would help with merging PRs, gathering the
-                group, and communicating with organization admins.
+                recommended that there's 2 captains to make the squad flow
+                without major hitches. They would help with merging PRs,
+                gathering the group, and communicating with organization admins.
               </Li>
               <Li>
                 While there's the personal learning aspect, the social aspect
-                will promote cohesion and cameraderie. We use various platforms
-                that will be listed in the benefits section.
+                will promote cohesion and camaraderie. We use various platforms
+                that will are listed in the benefits section. You can also tweet
+                and hashtag{' '}
+                <a
+                  href={faq.walletGuidelines.url}
+                  title={faq.walletGuidelines.title}
+                  rel='noopener noreferrer nofollow'
+                  target='_blank'
+                >
+                  #icarussquadron
+                </a>
+                .
               </Li>
             </Ul>
 
@@ -252,7 +253,7 @@ export default function FAQ() {
               </Li>
               <Li>
                 Once the concept is more established and battle-tested, the
-                initiative will start to roll out.
+                initiative will start to rolling out in Q4 2021.
               </Li>
               <Li>
                 As planned, you can join as a pilot or captain. Eventually
@@ -263,13 +264,17 @@ export default function FAQ() {
             <H3>What are some of the methods of the organization?</H3>
             <Ul>
               <Li>
-                Crowdsourcing can be a powerful force to help build the
-                community that this initiative aims to harness and transmute
-                into a platform for new learners.
+                Crowdsourcing can be a powerful tool to help build the
+                community.
               </Li>
               <Li>
-                The aim is not to make a set curriculum but rather one that can
-                be flexible and adaptive to the community needs.
+                The initiative aims to harness and transmute into a platform for
+                new learners.
+              </Li>
+              <Li>
+                The aim is not to make a set curriculum but rather recommended
+                projects and resources. The squadrons can adapt to new resources
+                as desired.
               </Li>
               <Li>
                 A lot of the power is distributed to each squadron to as how
@@ -281,7 +286,7 @@ export default function FAQ() {
               <Li>
                 Members, pilots, and captains are encouraged to take charge of
                 their own learning, disseminate knowledge and experiences for
-                future learners, and blazing a trail where there are none.
+                future learners, and blazing a trail where there were none.
               </Li>
               <Li>
                 These contributions can take various forms such as creating
@@ -296,8 +301,9 @@ export default function FAQ() {
               <Li>
                 Reach out to an admin on the{' '}
                 <a
-                  href='https://discord.gg/9yYsQVYR3K'
-                  alt='Icarus Initiative Discord'
+                  href={faq.discord.url}
+                  title={faq.discord.title}
+                  rel='noopener noreferrer nofollow'
                   target='_blank'
                 >
                   Icarus Discord Channel
@@ -318,9 +324,11 @@ export default function FAQ() {
             </Ul>
 
             <Div>
+              {' '}
               <a
-                href='https://github.com/icarus-initiative/icarus_initiative'
-                alt='Icarus Initiative Main Repository'
+                href={faq.repo.url}
+                title={faq.repo.title}
+                rel='noopener noreferrer nofollow'
                 target='_blank'
               >
                 <Button>More Deetz</Button>

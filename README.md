@@ -32,3 +32,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+---
+
+## Deploy on Digital Ocean
+
+- [Guide](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-next-js-app-to-app-platform)
+- Deployed as custom server.
+
+1. Add script: `"start": "next start -H 0.0.0.0 -p ${PORT:-8080}"`
+2. DO needs lock file included.

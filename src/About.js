@@ -72,7 +72,7 @@ export default function About() {
                 consisting of a project and evaluating resources.
               </li>
               <li>
-                Join up as a pilot or as a captain and lead your squad to new
+                Join up as a pilot or as a captain to lead your squad to new
                 heights.
               </li>
               <li>Create tangible projects to showcase.</li>
@@ -89,13 +89,10 @@ export default function About() {
                 Build a basic wallet, smart contracts, NFT platform, and RPG
                 game. Where will your squad decide to go?
               </li>
-              <li>
-                Use verified resources that have been vetted by pilots flying
-                ahead.
-              </li>
+              <li>Use vetted resources verified by pilots in front.</li>
               <li>Learn to work with Solana SDK and APIs.</li>
               <li>
-                Vote in resources on a limited list to validate content
+                Vote in resources on a limited slots to validate content
                 richness.
               </li>
             </CardDescription>
@@ -105,7 +102,7 @@ export default function About() {
             <CardTitle>Platforms</CardTitle>
             <CardDescription>
               <li>Use moderated platforms to collaborate and learn.</li>
-              <li>Build with a passionate community or help new pilots.</li>
+              <li>Build with a passionate community and help new pilots.</li>
               <li>
                 Use Github, Discord, Discourse to capture crowd knowledge.
               </li>
