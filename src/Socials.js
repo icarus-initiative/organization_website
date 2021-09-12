@@ -1,22 +1,24 @@
 import styled from 'styled-components';
-import globals from './data';
 import {
   FaGithub,
   FaDiscord,
   FaYoutube,
   FaTwitterSquare,
 } from 'react-icons/fa';
+import lib from './lib';
 
 const SocialsSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   width: 30%;
   a:visited,
   a:link {
     outline: 0;
     border: none;
+  }
+  @media (max-width: 695px) {
+    width: 40%;
   }
 `;
 const Github = styled(FaGithub)`
@@ -38,7 +40,7 @@ const A = styled.a`
 `;
 
 export default function Socials() {
-  const { socials } = globals();
+  const { socials } = lib();
   return (
     <SocialsSection>
       <A href={socials.github.url} target='_blank'>
