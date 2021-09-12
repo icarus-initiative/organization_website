@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import lib from './lib';
 
-const { hero } = lib();
+const { hero, Purplerize } = lib();
+
 const Section = styled.section`
   height: 500px;
   padding-left: 2rem;
@@ -25,9 +26,6 @@ const Subtitle = styled.p`
 const Subtitle2 = styled.p`
   font-size: 2.4rem;
   margin: 0;
-`;
-const Purplerize = styled.span`
-  color: var(--purple);
 `;
 
 export default function Banner() {

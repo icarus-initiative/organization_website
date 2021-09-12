@@ -63,12 +63,9 @@ const CardDescription = styled.ul`
   width: 90%;
   text-align: left;
 `;
-const Purplerize = styled.span`
-  color: var(--purple);
-`;
 
 export default function About() {
-  const { about } = lib();
+  const { about, Purplerize } = lib();
   return (
     <Wrapper>
       <Section id='about'>

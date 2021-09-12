@@ -43,12 +43,8 @@ const P = styled.p`
 `;
 const A = styled.a``;
 
-const Purplerize = styled.span`
-  color: var(--purple);
-`;
-
 export default function Helm() {
-  const { helm } = lib();
+  const { helm, Purplerize } = lib();
   return (
     <Wrapper>
       <Section id='helm'>

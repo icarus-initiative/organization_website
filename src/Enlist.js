@@ -30,9 +30,6 @@ const P = styled.p`
     font-size: 9.6rem;
   }
 `;
-const Purplerize = styled.span`
-  color: var(--purple);
-`;
 const Button = styled.button`
   padding: 1rem;
   color: var(--teal);
@@ -58,7 +55,7 @@ const A = styled.a`
 `;
 
 export default function Enlist() {
-  const { enlist } = lib();
+  const { enlist, Purplerize } = lib();
   return (
     <Wrapper>
       <Section id='enlist'>

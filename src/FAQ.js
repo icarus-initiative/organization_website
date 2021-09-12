@@ -93,12 +93,8 @@ const Part2R = styled.div`
   }
 `;
 
-const Purplerize = styled.span`
-  color: var(--purple);
-`;
-
 export default function FAQ() {
-  const { faq } = lib();
+  const { faq, Purplerize } = lib();
   return (
     <Wrapper>
       <Section id='faqs'>

@@ -1,4 +1,16 @@
+import styled from 'styled-components';
+
 export default function lib() {
+  // ====================
+  // Styled Components
+  // ====================
+  const Purplerize = styled.span`
+    color: var(--purple);
+  `;
+
+  // ====================
+  // Links
+  // ====================
   const about = {
     squadrons: {
       name: 'Squadrons',
@@ -190,5 +202,6 @@ export default function lib() {
     navigation,
     process,
     socials,
+    Purplerize,
   };
 }

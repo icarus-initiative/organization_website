@@ -56,12 +56,9 @@ const CardTitle = styled.h3`
 const CardDescription = styled.ul`
   margin: 0 auto;
 `;
-const Purplerize = styled.span`
-  color: var(--purple);
-`;
 
 export default function Process() {
-  const { process } = lib();
+  const { process, Purplerize } = lib();
   return (
     <Wrapper>
       <Section id='process'>
