@@ -1,4 +1,4 @@
-export default function globals() {
+export default function lib() {
   const about = {
     squadrons: {
       name: 'Squadrons',
@@ -123,6 +123,13 @@ export default function globals() {
     },
   };
 
+  const hero = {
+    banner: {
+      name: 'Banner',
+      photo: 'banner.jpg',
+    },
+  };
+
   const navigation = {
     logo: {
       name: 'Icarus Initiative Logo',
@@ -179,6 +186,7 @@ export default function globals() {
     faq,
     footer,
     helm,
+    hero,
     navigation,
     process,
     socials,
