@@ -17,6 +17,7 @@ const Section = styled.section`
 const Logo = styled.section`
   display: flex;
   width: 10%;
+  padding-left: 2rem;
 `;
 const NavSection = styled.section`
   display: flex;
