@@ -23,6 +23,9 @@ const GlobalStyles = createGlobalStyle`
     font-display: swap;
   }
   html {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
     --grayL: #35363a;
     --grayM: #2c2d30;
     --grayMD: #26262b;
@@ -46,6 +49,9 @@ const GlobalStyles = createGlobalStyle`
     font-family: var(--nunitoR);
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
     font-size: 1.8rem;
   }
   h1 { 
@@ -53,15 +59,10 @@ const GlobalStyles = createGlobalStyle`
   }
   h2 { font-size: 2.4rem; }
   h3 { font-size: 2rem; }
-  a:link, a:active {
+  a:link, a:active, a:visited  {
     color: white;
     text-decoration: none;
     border-bottom: 3px dashed var(--purple);
-  }
-  a:visited {
-    color: white;
-    text-decoration: none;
-    border-bottom: 1px solid var(--white);
   }
 `;
 const Wrapper = styled.main`
