@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import Image from 'next/image';
+import lib from './lib';
 
+const { hero } = lib();
 const Section = styled.section`
   height: 500px;
   padding-left: 2rem;
@@ -10,7 +11,7 @@ const Section = styled.section`
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url('/banner.webp');
+  background-image: url(${hero.banner.photo});
 `;
 const Title = styled.p`
   font-family: var(--nunitoB);
