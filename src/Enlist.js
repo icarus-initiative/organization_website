@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Wrapper from './Wrapper';
-import globals from './data.js';
+import lib from './lib';
 
 const Section = styled.section`
   display: flex;
@@ -14,6 +14,10 @@ const Flag = styled.aside`
   width: 512px;
   height: 512px;
   margin: 2rem auto;
+
+  @media (max-width: 1080px) {
+    background-image: none;
+  }
 `;
 const Recruit = styled.div`
   display: flex;
@@ -22,6 +26,9 @@ const Recruit = styled.div`
 `;
 const P = styled.p`
   font-size: 5.4rem;
+  @media (max-width: 1080px) {
+    font-size: 9.6rem;
+  }
 `;
 const Purplerize = styled.span`
   color: var(--purple);
@@ -51,7 +58,7 @@ const A = styled.a`
 `;
 
 export default function Enlist() {
-  const { enlist } = globals();
+  const { enlist } = lib();
   return (
     <Wrapper>
       <Section id='enlist'>
