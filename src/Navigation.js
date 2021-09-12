@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Socials from './Socials';
 import Image from 'next/image';
 import Link from 'next/link';
+import lib from './lib';
 
 const Section = styled.section`
   width: 100%;
@@ -13,11 +14,21 @@ const Section = styled.section`
   -moz-box-shadow: 0 10px 6px -6px black;
   box-shadow: 0 10px 6px -6px black;
   background: var(--grayD);
+  @media (max-width: 1080px) {
+    padding: 2rem;
+  }
+  @media (max-width: 695px) {
+    flex-direction: column;
+  }
 `;
 const Logo = styled.section`
   display: flex;
   width: 10%;
+  max-width: 10%;
   padding-left: 2rem;
+  @media (max-width: 1080px) {
+    display: none;
+  }
 `;
 const NavSection = styled.section`
   display: flex;
@@ -32,7 +43,6 @@ const Link1 = styled(Link)`
 `;
 const Span = styled.span`
   border: 5px solid var(--grayD);
-  padding: 1rem;
   &:hover {
     padding: 1rem;
     cursor: pointer;
@@ -43,12 +53,13 @@ const Span = styled.span`
 `;
 
 export default function Navigation() {
+  const { navigation } = lib();
   return (
     <Section>
       <Logo>
         <Image
-          src='/purple_feather_256_min.png'
-          alt='Icarus Initiative Logo'
+          src={navigation.logo.icon}
+          alt={navigation.logo.name}
           width={100}
           height={100}
         />
