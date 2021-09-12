@@ -1,8 +1,8 @@
 import React from 'react';
-import globals from './data';
+import lib from './lib';
 
 export default function Credits() {
-  const { credits } = globals();
+  const { credits } = lib();
   return (
     <section>
       Icon credits to{' '}
