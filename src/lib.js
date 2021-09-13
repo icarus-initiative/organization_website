@@ -1,16 +1,28 @@
-export default function globals() {
+import styled from 'styled-components';
+
+export default function lib() {
+  // ====================
+  // Styled Components
+  // ====================
+  const Purplerize = styled.span`
+    color: var(--purple);
+  `;
+
+  // ====================
+  // Links
+  // ====================
   const about = {
     squadrons: {
       name: 'Squadrons',
-      icon: 'fighter_128.png',
+      icon: 'fighter_128.webp',
     },
     expeditions: {
       name: 'Expeditions',
-      icon: 'mountain_128.png',
+      icon: 'mountain_128.webp',
     },
     platforms: {
       name: 'Platforms',
-      icon: 'carrier_128.png',
+      icon: 'carrier_128.webp',
     },
   };
 
@@ -56,7 +68,7 @@ export default function globals() {
   const enlist = {
     flag: {
       name: 'Flag',
-      icon: 'flag_512.png',
+      icon: 'flag_512.webp',
     },
   };
 
@@ -69,6 +81,10 @@ export default function globals() {
       url: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/1st_expedition_project_guildeline.md',
       title: 'Icarus Initiative Wallet Guidelines',
     },
+    twitter: {
+      url: 'https://twitter.com/icarussquadron',
+      title: 'Icarus Initiative Twitter',
+    },
     discord: {
       url: 'https://discord.gg/9yYsQVYR3K',
       title: 'Icarus Initiative Discord',
@@ -77,38 +93,67 @@ export default function globals() {
       url: 'https://github.com/icarus-initiative/icarus_initiative',
       title: 'Icarus Initiative Main Repo',
     },
+    left: {
+      name: 'Left Wave Image',
+      photo: 'left_wave.jpg',
+    },
+    right: {
+      name: 'Right Wave Image',
+      photo: 'right_wave.jpg',
+    },
+  };
+
+  const footer = {
+    logo: {
+      name: 'Icarus Initiative Logo',
+      icon: '/purple_feather_256_min.webp',
+    },
   };
 
   const helm = {
     discord: {
       name: 'Radio Channels',
-      icon: '/discord_128.png',
+      icon: '/discord_128.webp',
       link: 'https://discord.gg/9yYsQVYR3K',
     },
     discourse: {
       name: 'Central Intelligence',
-      icon: '/column_128.png',
+      icon: '/column_128.webp',
       link: 'https://google.com',
     },
     icarus: {
       name: 'Icarus Force',
-      icon: '/quill_128.png',
+      icon: '/quill_128.webp',
       link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/README.md',
     },
     expeditions: {
       name: 'Expeditions',
-      icon: '/compass_128.png',
+      icon: '/compass_128.webp',
       link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/expeditions.md',
     },
     squadrons: {
       name: 'Squadrons',
-      icon: '/insignia_128.png',
+      icon: '/insignia_128.webp',
       link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/squadrons.md',
     },
     resources: {
       name: 'Resources',
-      icon: '/books_128.png',
+      icon: '/books_128.webp',
       link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/resources.md',
+    },
+  };
+
+  const hero = {
+    banner: {
+      name: 'Banner',
+      photo: 'banner.jpg',
+    },
+  };
+
+  const navigation = {
+    logo: {
+      name: 'Icarus Initiative Logo',
+      icon: '/purple_feather_256_min.webp',
     },
   };
 
@@ -154,5 +199,17 @@ export default function globals() {
     },
   };
 
-  return { about, credits, enlist, faq, helm, process, socials };
+  return {
+    about,
+    credits,
+    enlist,
+    faq,
+    footer,
+    helm,
+    hero,
+    navigation,
+    process,
+    socials,
+    Purplerize,
+  };
 }

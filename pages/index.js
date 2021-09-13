@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Navigation from '../src/Navigation';
-import Banner from '../src/Banner';
 import About from '../src/About';
 import Enlist from '../src/Enlist';
 import Helm from '../src/Helm';
+import Hero from '../src/Hero';
 import Process from '../src/Process';
 import FAQ from '../src/FAQ';
 import Footer from '../src/Footer';
@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
 
       <Navigation />
-      <Banner />
+      <Hero />
       <About />
       <Helm />
       <Process />

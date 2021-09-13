@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Wrapper from './Wrapper';
-import globals from './data';
+import lib from './lib';
 
 const Section = styled.section`
   margin: 0 auto;
@@ -12,6 +12,9 @@ const Section = styled.section`
   background-size: 100% 50%;
   background-image: url('/purple_feather_rev_min.png');
   background-position: center center;
+  @media (max-width: 1280px) {
+    background-image: none;
+  }
 `;
 const H1 = styled.h1`
   font-size: 4.8rem;
@@ -27,8 +30,8 @@ const Li = styled.li`
 `;
 const Cards = styled.div`
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 `;
 const Card = styled.div`
   background: var(--grayL);
@@ -41,6 +44,10 @@ const Card = styled.div`
   border-radius: 2%;
   box-shadow: 1px 1px var(--teal);
   border: 1px solid var(--purple);
+
+  @media (max-width: 1680px) {
+    width: 80%;
+  }
 `;
 const CardTitle = styled.h3`
   font-size: 2.4rem;
@@ -50,11 +57,8 @@ const CardDescription = styled.ul`
   margin: 0 auto;
 `;
 
-const Purplerize = styled.span`
-  color: var(--purple);
-`;
 export default function Process() {
-  const { process } = globals();
+  const { process, Purplerize } = lib();
   return (
     <Wrapper>
       <Section id='process'>

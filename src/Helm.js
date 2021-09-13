@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Wrapper from './Wrapper';
-import globals from './data.js';
+import lib from './lib';
 
 const Section = styled.section``;
 const H1 = styled.h1`
@@ -14,8 +14,8 @@ const Cards = styled.div`
   flex-wrap: wrap;
 `;
 const Card = styled.div`
-  flex: 2 1 1;
-  width: 33%;
+  flex: 1 1 300px;
+  width: 32%;
   margin: 2rem auto;
 `;
 const Icon = styled.aside`
@@ -35,7 +35,7 @@ const P = styled.p`
   color: var(--teal);
   padding: 1rem;
   margin: 2rem auto;
-  width: 256px;
+  width: 80%;
   border-radius: 5px;
   box-shadow: 1px 1px var(--teal);
   border: 1px solid var(--purple);
@@ -43,12 +43,8 @@ const P = styled.p`
 `;
 const A = styled.a``;
 
-const Purplerize = styled.span`
-  color: var(--purple);
-`;
-
 export default function Helm() {
-  const { helm } = globals();
+  const { helm, Purplerize } = lib();
   return (
     <Wrapper>
       <Section id='helm'>

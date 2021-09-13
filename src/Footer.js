@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Socials from './Socials';
 import Credits from './Credits';
 import Image from 'next/image';
+import lib from './lib';
 
 const Section = styled.section`
   background: var(--grayD);
@@ -28,14 +29,15 @@ const P1 = styled.p`
 const P2 = styled.p``;
 
 export default function Footer() {
+  const { footer } = lib();
   return (
     <Section>
       <Left>
         <Socials />
         <P2>
           <Image
-            src='/purple_feather_256_min.png'
-            alt='Icarus Initiative Logo'
+            src={footer.logo.icon}
+            alt={footer.logo.name}
             width={25}
             height={25}
           />{' '}

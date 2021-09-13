@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Wrapper from './Wrapper';
-import globals from './data.js';
+import lib from './lib';
 
 const Section = styled.section`
   width: 80%;
@@ -16,10 +16,13 @@ const Cards = styled.div`
   display: flex;
   justify-content: space-around;
   align-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  height: 100%;
 `;
 const Card = styled.div`
   background: var(--grayL);
-  width: 450px;
+  width: 32%;
   height: 450px;
   border-radius: 2%;
   text-align: center;
@@ -28,6 +31,20 @@ const Card = styled.div`
   border-radius: 2%;
   box-shadow: 1px 1px var(--teal);
   border: 1px solid var(--purple);
+  flex: 1 1 450px;
+  margin: 2rem;
+
+  @media (max-width: 1850px) {
+    height: 375px;
+  }
+
+  @media (max-width: 1523px) {
+    height: 450px;
+  }
+
+  @media (max-width: 539px) {
+    height: 500px;
+  }
 `;
 const CardIcon = styled.aside`
   background-image: url(${(props) => props.icon});
@@ -46,12 +63,9 @@ const CardDescription = styled.ul`
   width: 90%;
   text-align: left;
 `;
-const Purplerize = styled.span`
-  color: var(--purple);
-`;
 
 export default function About() {
-  const { about } = globals();
+  const { about, Purplerize } = lib();
   return (
     <Wrapper>
       <Section id='about'>
@@ -76,9 +90,7 @@ export default function About() {
                 heights.
               </li>
               <li>Create tangible projects to showcase.</li>
-              <li>
-                Earn domain visibility and connect with others professionally.
-              </li>
+              <li>Earn domain visibility and professionally connect.</li>
             </CardDescription>
           </Card>
           <Card>

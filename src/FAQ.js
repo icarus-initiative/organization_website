@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import Wrapper from './Wrapper';
-import globals from './data';
+import lib from './lib';
 
+const { faq, Purplerize } = lib();
 const Section = styled.section`
   margin-bottom: 2rem;
 `;
@@ -48,7 +49,7 @@ const Partition = styled.div`
 `;
 const Part1L = styled.div`
   width: 19.98%;
-  background-image: url('/left_wave.jpg');
+  background-image: url(${faq.left.photo});
   height: 1500px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -56,10 +57,22 @@ const Part1L = styled.div`
   position: relative;
   margin: 0;
   border-radius: 5px;
+
+  @media (max-width: 539px) {
+    background-image: none;
+  }
 `;
 const CenterColumn = styled.div`
   width: 40%;
   margin: 0;
+
+  @media (max-width: 1280px) {
+    width: 50%;
+  }
+
+  @media (max-width: 539px) {
+    width: 100%;
+  }
 `;
 const EmptyColumn = styled.div`
   width: 19.98%;
@@ -67,7 +80,7 @@ const EmptyColumn = styled.div`
 `;
 const Part2R = styled.div`
   width: 19.98%;
-  background-image: url('/right_wave.jpg');
+  background-image: url(${faq.right.photo});
   height: 1500px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -75,14 +88,13 @@ const Part2R = styled.div`
   position: relative;
   margin: 0;
   border-radius: 5px;
-`;
 
-const Purplerize = styled.span`
-  color: var(--purple);
+  @media (max-width: 539px) {
+    background-image: none;
+  }
 `;
 
 export default function FAQ() {
-  const { faq } = globals();
   return (
     <Wrapper>
       <Section id='faqs'>
@@ -121,8 +133,7 @@ export default function FAQ() {
                 and be willing to pioneer.
               </Li>
               <Li>
-                To get a better idea, get a sample of the minimum skills for the
-                1st project listed more in depth in the{' '}
+                To get a better idea, glance at the minimum skills for the{' '}
                 <a
                   href={faq.walletGuidelines.url}
                   title={faq.walletGuidelines.title}
@@ -234,8 +245,8 @@ export default function FAQ() {
                 that will are listed in the benefits section. You can also tweet
                 and hashtag{' '}
                 <a
-                  href={faq.walletGuidelines.url}
-                  title={faq.walletGuidelines.title}
+                  href={faq.twitter.url}
+                  title={faq.twitter.title}
                   rel='noopener noreferrer nofollow'
                   target='_blank'
                 >
