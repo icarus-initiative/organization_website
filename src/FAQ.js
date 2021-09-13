@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Wrapper from './Wrapper';
 import lib from './lib';
 
+const { faq, Purplerize } = lib();
 const Section = styled.section`
   margin-bottom: 2rem;
 `;
@@ -48,7 +49,7 @@ const Partition = styled.div`
 `;
 const Part1L = styled.div`
   width: 19.98%;
-  background-image: url('/left_wave.jpg');
+  background-image: url(${faq.left.photo});
   height: 1500px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -79,7 +80,7 @@ const EmptyColumn = styled.div`
 `;
 const Part2R = styled.div`
   width: 19.98%;
-  background-image: url('/right_wave.jpg');
+  background-image: url(${faq.right.photo});
   height: 1500px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -94,7 +95,6 @@ const Part2R = styled.div`
 `;
 
 export default function FAQ() {
-  const { faq, Purplerize } = lib();
   return (
     <Wrapper>
       <Section id='faqs'>

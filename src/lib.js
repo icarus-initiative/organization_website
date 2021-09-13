@@ -93,6 +93,14 @@ export default function lib() {
       url: 'https://github.com/icarus-initiative/icarus_initiative',
       title: 'Icarus Initiative Main Repo',
     },
+    left: {
+      name: 'Left Wave Image',
+      photo: 'left_wave.jpg',
+    },
+    right: {
+      name: 'Right Wave Image',
+      photo: 'right_wave.jpg',
+    },
   };
 
   const footer = {
