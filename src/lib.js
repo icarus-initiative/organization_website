@@ -7,6 +7,9 @@ export default function lib() {
   const Purplerize = styled.span`
     color: var(--purple);
   `;
+  const Tealrize = styled.span`
+    color: var(--teal);
+  `;
 
   // ====================
   // Links
@@ -211,5 +214,6 @@ export default function lib() {
     process,
     socials,
     Purplerize,
+    Tealrize,
   };
 }

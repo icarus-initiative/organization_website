@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import lib from './lib';
 
-const { hero, Purplerize } = lib();
+const { hero, Tealrize } = lib();
 
 const Section = styled.section`
   height: 500px;
@@ -32,11 +32,11 @@ export default function Banner() {
   return (
     <Section>
       <Title>
-        Icar<Purplerize>us</Purplerize> Initiative
+        Icar<Tealrize>us</Tealrize> Initiative
       </Title>
       <Subtitle>The Crowdsourced Solana/Rust Learning Initiative</Subtitle>
       <Subtitle2>
-        #icar<Purplerize>us</Purplerize>squadron #devstogetherstrong
+        #icar<Tealrize>us</Tealrize>squadron #devstogetherstrong
       </Subtitle2>
     </Section>
   );
