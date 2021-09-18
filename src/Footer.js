@@ -6,6 +6,7 @@ import lib from './lib';
 
 const Section = styled.section`
   background: var(--grayD);
+  padding-bottom: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,24 +15,39 @@ const Section = styled.section`
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 -8px 6px -6px black;
+  @media (max-width: 414px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const Left = styled.div`
   width: 60%;
-  min-width: 935px;
   section {
     margin: 4rem auto;
+  }
+  @media (max-width: 414px) {
+    width: 90%;
   }
 `;
 const Right = styled.div`
   width: 40%;
+  @media (max-width: 414px) {
+    width: 90%;
+  }
 `;
 const P1 = styled.p`
   font-size: 2.4rem;
 `;
 const P2 = styled.p`
-  width: 80%;
+  width: 60%;
   text-align: center;
   margin: 0 auto;
+  @media (max-width: 1440px) {
+    width: 100%;
+  }
+  @media (max-width: 414px) {
+    width: 94%;
+  }
 `;
 
 export default function Footer() {

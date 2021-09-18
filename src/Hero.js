@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import lib from './lib';
 
 const { hero, Tealrize } = lib();
-
 const Section = styled.section`
   height: 500px;
   padding-left: 2rem;
@@ -18,14 +17,23 @@ const Title = styled.p`
   font-family: var(--nunitoB);
   font-size: 6.4rem;
   margin: 0;
+  @media (max-width: 414px) {
+    font-size: 4.8rem;
+  }
 `;
 const Subtitle = styled.p`
   font-size: 3.2rem;
   margin: 0;
+  @media (max-width: 414px) {
+    font-size: 2.4rem;
+  }
 `;
 const Subtitle2 = styled.p`
   font-size: 2.4rem;
   margin: 0;
+  @media (max-width: 414px) {
+    font-size: 1.6rem;
+  }
 `;
 
 export default function Banner() {

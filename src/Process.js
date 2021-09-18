@@ -15,6 +15,9 @@ const Section = styled.section`
   @media (max-width: 1280px) {
     background-image: none;
   }
+  @media (max-width: 414px) {
+    line-height: 1.5;
+  }
 `;
 const H1 = styled.h1`
   font-size: 4.8rem;
@@ -43,7 +46,9 @@ const Card = styled.div`
   border-radius: 5px;
   box-shadow: 1px 1px var(--teal);
   border: 1px solid var(--purple);
-  @media (max-width: 1407) {
+  @media (max-width: 414px) {
+    width: 94%;
+    padding: 1rem;
   }
 `;
 const CardTitle = styled.h3`

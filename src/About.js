@@ -34,6 +34,9 @@ const Card = styled.div`
   @media (max-width: 1330px) {
     height: 400px;
   }
+  @media (max-width: 414px) {
+    height: 500px;
+  }
 `;
 const CardIcon = styled.aside`
   background-image: url(${(props) => props.icon});

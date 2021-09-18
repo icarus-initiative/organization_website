@@ -5,6 +5,10 @@ import lib from './lib';
 const { faq, Purplerize } = lib();
 const Section = styled.section`
   margin-bottom: 2rem;
+  @media (max-width: 414px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 `;
 const H1 = styled.h1`
   font-size: 4.8rem;
@@ -57,19 +61,19 @@ const Part1L = styled.div`
   position: relative;
   margin: 0;
   border-radius: 5px;
-
   @media (max-width: 539px) {
     background-image: none;
+  }
+  @media (max-width: 414px) {
+    display: none;
   }
 `;
 const CenterColumn = styled.div`
   width: 40%;
   margin: 0;
-
   @media (max-width: 1280px) {
     width: 50%;
   }
-
   @media (max-width: 539px) {
     width: 100%;
   }
@@ -77,6 +81,9 @@ const CenterColumn = styled.div`
 const EmptyColumn = styled.div`
   width: 19.98%;
   margin: 0;
+  @media (max-width: 414px) {
+    display: none;
+  }
 `;
 const Part2R = styled.div`
   width: 19.98%;
@@ -88,9 +95,11 @@ const Part2R = styled.div`
   position: relative;
   margin: 0;
   border-radius: 5px;
-
   @media (max-width: 539px) {
     background-image: none;
+  }
+  @media (max-width: 414px) {
+    display: none;
   }
 `;
 
