@@ -3,11 +3,8 @@ import Wrapper from './Wrapper';
 import lib from './lib';
 
 const Section = styled.section`
-  width: 80%;
+  width: 94%;
   margin: 0 auto;
-`;
-const Hook = styled.div`
-  font-size: 4.8rem;
 `;
 const H1 = styled.h1`
   font-size: 4.8rem;
@@ -16,34 +13,26 @@ const Cards = styled.div`
   display: flex;
   justify-content: space-around;
   align-content: center;
-  position: relative;
   flex-wrap: wrap;
-  height: 100%;
 `;
 const Card = styled.div`
   background: var(--grayL);
-  width: 32%;
+  max-width: 606px;
   height: 450px;
+  margin: 1rem;
+  padding: 1rem;
+  flex: 1 1 397px;
   border-radius: 2%;
-  text-align: center;
   vertical-align: middle;
   align-self: center;
   border-radius: 2%;
   box-shadow: 1px 1px var(--teal);
   border: 1px solid var(--purple);
-  flex: 1 1 450px;
-  margin: 2rem;
-
-  @media (max-width: 1850px) {
-    height: 375px;
+  @media (max-width: 1398px) {
+    height: 470px;
   }
-
-  @media (max-width: 1523px) {
-    height: 450px;
-  }
-
-  @media (max-width: 539px) {
-    height: 500px;
+  @media (max-width: 1330px) {
+    height: 400px;
   }
 `;
 const CardIcon = styled.aside`
@@ -60,7 +49,7 @@ const CardTitle = styled.h3`
 `;
 const CardDescription = styled.ul`
   margin: 0 auto;
-  width: 90%;
+  width: 94%;
   text-align: left;
 `;
 
@@ -69,13 +58,11 @@ export default function About() {
   return (
     <Wrapper>
       <Section id='about'>
-        <Hook>
-          <H1>
-            Level up with the squad and
-            <br />
-            <Purplerize>vote on curriculum development</Purplerize>
-          </H1>
-        </Hook>
+        <H1>
+          Level up with the squad and
+          <br />
+          <Purplerize>vote on curriculum development</Purplerize>
+        </H1>
         <Cards>
           <Card>
             <CardIcon icon={about.squadrons.icon} />

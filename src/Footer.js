@@ -10,12 +10,14 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
   box-shadow: 0 -8px 6px -6px black;
 `;
 const Left = styled.div`
   width: 60%;
+  min-width: 935px;
   section {
     margin: 4rem auto;
   }
@@ -26,7 +28,11 @@ const Right = styled.div`
 const P1 = styled.p`
   font-size: 2.4rem;
 `;
-const P2 = styled.p``;
+const P2 = styled.p`
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+`;
 
 export default function Footer() {
   const { footer } = lib();
