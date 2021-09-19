@@ -231,8 +231,8 @@ export default function FAQ() {
             <H3>How to squadrons briefly work?</H3>
             <Ul>
               <Li>
-                A squad consisting of 4-6 members embark on expeditions to level
-                up together. A squadron aims to build a recommended project and
+                A squad of 4-6 members embark on expeditions to level up
+                together. A squadron aims to build a recommended project and
                 evaluating at least one course, video series, or code sets on an
                 expedition.
               </Li>
@@ -250,9 +250,8 @@ export default function FAQ() {
               </Li>
               <Li>
                 While there's the personal learning aspect, the social aspect
-                will promote cohesion and camaraderie. We use various platforms
-                that will are listed in the benefits section. You can also tweet
-                and hashtag{' '}
+                will promote cohesion and camaraderie. You can also tweet and
+                hashtag{' '}
                 <a
                   href={faq.twitter.url}
                   title={faq.twitter.title}
@@ -274,10 +273,6 @@ export default function FAQ() {
               <Li>
                 Once the concept is more established and battle-tested, the
                 initiative will start to rolling out in Q4 2021.
-              </Li>
-              <Li>
-                As planned, you can join as a pilot or captain. Eventually
-                captains can advance to admin.
               </Li>
             </Ul>
 
@@ -309,9 +304,9 @@ export default function FAQ() {
                 future learners, and blazing a trail where there were none.
               </Li>
               <Li>
-                These contributions can take various forms such as creating
-                deliverables for consumption, helping to answer technical
-                questions, or leading events.
+                These contributions can take various forms such as voting on
+                resources, creating deliverables for consumption, helping to
+                answer technical questions, or leading events.
               </Li>
             </Ul>
             <H3>
