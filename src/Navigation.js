@@ -14,20 +14,28 @@ const Section = styled.section`
   -moz-box-shadow: 0 10px 6px -6px black;
   box-shadow: 0 10px 6px -6px black;
   background: var(--grayD);
-  @media (max-width: 1080px) {
-    padding: 2rem;
-  }
-  @media (max-width: 695px) {
+  @media (max-width: 850px) {
     flex-direction: column;
+    * {
+      margin: 0.5rem 0;
+    }
+  }
+  @media (max-width: 850px) {
+    * {
+      margin: 0.5rem 0;
+    }
   }
 `;
 const Logo = styled.section`
-  display: flex;
   width: 10%;
   max-width: 10%;
   padding-left: 2rem;
-  @media (max-width: 1080px) {
-    display: none;
+  @media (max-width: 414px) {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    max-width: 100%;
   }
 `;
 const NavSection = styled.section`

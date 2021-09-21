@@ -5,6 +5,10 @@ import lib from './lib';
 const { faq, Purplerize } = lib();
 const Section = styled.section`
   margin-bottom: 2rem;
+  @media (max-width: 414px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 `;
 const H1 = styled.h1`
   font-size: 4.8rem;
@@ -57,19 +61,19 @@ const Part1L = styled.div`
   position: relative;
   margin: 0;
   border-radius: 5px;
-
   @media (max-width: 539px) {
     background-image: none;
+  }
+  @media (max-width: 414px) {
+    display: none;
   }
 `;
 const CenterColumn = styled.div`
   width: 40%;
   margin: 0;
-
   @media (max-width: 1280px) {
     width: 50%;
   }
-
   @media (max-width: 539px) {
     width: 100%;
   }
@@ -77,6 +81,9 @@ const CenterColumn = styled.div`
 const EmptyColumn = styled.div`
   width: 19.98%;
   margin: 0;
+  @media (max-width: 414px) {
+    display: none;
+  }
 `;
 const Part2R = styled.div`
   width: 19.98%;
@@ -88,9 +95,11 @@ const Part2R = styled.div`
   position: relative;
   margin: 0;
   border-radius: 5px;
-
   @media (max-width: 539px) {
     background-image: none;
+  }
+  @media (max-width: 414px) {
+    display: none;
   }
 `;
 
@@ -222,8 +231,8 @@ export default function FAQ() {
             <H3>How to squadrons briefly work?</H3>
             <Ul>
               <Li>
-                A squad consisting of 4-6 members embark on expeditions to level
-                up together. A squadron aims to build a recommended project and
+                A squad of 4-6 members embark on expeditions to level up
+                together. A squadron aims to build a recommended project and
                 evaluating at least one course, video series, or code sets on an
                 expedition.
               </Li>
@@ -241,9 +250,8 @@ export default function FAQ() {
               </Li>
               <Li>
                 While there's the personal learning aspect, the social aspect
-                will promote cohesion and camaraderie. We use various platforms
-                that will are listed in the benefits section. You can also tweet
-                and hashtag{' '}
+                will promote cohesion and camaraderie. You can also tweet and
+                hashtag{' '}
                 <a
                   href={faq.twitter.url}
                   title={faq.twitter.title}
@@ -265,10 +273,6 @@ export default function FAQ() {
               <Li>
                 Once the concept is more established and battle-tested, the
                 initiative will start to rolling out in Q4 2021.
-              </Li>
-              <Li>
-                As planned, you can join as a pilot or captain. Eventually
-                captains can advance to admin.
               </Li>
             </Ul>
 
@@ -300,9 +304,9 @@ export default function FAQ() {
                 future learners, and blazing a trail where there were none.
               </Li>
               <Li>
-                These contributions can take various forms such as creating
-                deliverables for consumption, helping to answer technical
-                questions, or leading events.
+                These contributions can take various forms such as voting on
+                resources, creating deliverables for consumption, helping to
+                answer technical questions, or leading events.
               </Li>
             </Ul>
             <H3>

@@ -4,7 +4,7 @@ import lib from './lib';
 
 const Section = styled.section`
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   text-align: left;
   line-height: 2;
   position: relative;
@@ -14,6 +14,9 @@ const Section = styled.section`
   background-position: center center;
   @media (max-width: 1280px) {
     background-image: none;
+  }
+  @media (max-width: 414px) {
+    line-height: 1.5;
   }
 `;
 const H1 = styled.h1`
@@ -32,25 +35,25 @@ const Cards = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex: 1 1 540px;
 `;
 const Card = styled.div`
   background: var(--grayL);
-  width: 47%;
+  width: 48%;
   height: auto;
-  margin: 0 2rem;
-  margin-bottom: 6rem;
-  padding: 0 2rem;
-  padding-bottom: 2rem;
-  border-radius: 2%;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 5px;
   box-shadow: 1px 1px var(--teal);
   border: 1px solid var(--purple);
-
-  @media (max-width: 1680px) {
-    width: 80%;
+  @media (max-width: 414px) {
+    width: 94%;
+    padding: 1rem;
   }
 `;
 const CardTitle = styled.h3`
   font-size: 2.4rem;
+  margin: 1rem;
   color: var(--teal);
 `;
 const CardDescription = styled.ul`

@@ -6,6 +6,9 @@ const Section = styled.section`
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  @media (max-width: 414px) {
+    width: 94%;
+  }
 `;
 const Flag = styled.aside`
   background-image: url(${(props) => props.icon});
@@ -14,9 +17,11 @@ const Flag = styled.aside`
   width: 512px;
   height: 512px;
   margin: 2rem auto;
-
   @media (max-width: 1080px) {
     background-image: none;
+  }
+  @media (max-width: 414px) {
+    display: none;
   }
 `;
 const Recruit = styled.div`
@@ -28,6 +33,9 @@ const P = styled.p`
   font-size: 5.4rem;
   @media (max-width: 1080px) {
     font-size: 9.6rem;
+  }
+  @media (max-width: 414px) {
+    font-size: 5.6rem;
   }
 `;
 const Button = styled.button`
@@ -44,6 +52,9 @@ const Button = styled.button`
     background: var(--purple);
     border-color: var(--teal);
     cursor: pointer;
+  }
+  @media (max-width: 414px) {
+    font-size: 2.4rem;
   }
 `;
 const A = styled.a`

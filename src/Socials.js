@@ -17,8 +17,8 @@ const SocialsSection = styled.section`
     outline: 0;
     border: none;
   }
-  @media (max-width: 695px) {
-    width: 40%;
+  @media (max-width: 414px) {
+    width: 80%;
   }
 `;
 const Github = styled(FaGithub)`
