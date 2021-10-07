@@ -80,7 +80,7 @@ export default function Process() {
           </Li>
           <Li>
             Icarus seeks people who are passionate about mastering their craft
-            because the future is built by meticulous minds.
+            and enjoy learning in a friendly, collaborative environment.
           </Li>
         </Ul>
         <Cards>
@@ -194,7 +194,7 @@ export default function Process() {
                   rel='noopener noreferrer nofollow'
                   target='_blank'
                 >
-                  #icarusinitiative
+                  #IcarusSquadron
                 </a>
                 .
               </li>

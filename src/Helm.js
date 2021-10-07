@@ -56,6 +56,7 @@ export default function Helm() {
         </H1>
         <Cards>
           <Card>
+            <Title>{helm.discord.name}</Title>
             <A
               href={helm.discord.link}
               rel='noopener noreferrer nofollow'
@@ -63,10 +64,11 @@ export default function Helm() {
             >
               <Icon icon={helm.discord.icon} />
             </A>
-            <Title>{helm.discord.name}</Title>
+            <p>{helm.discord.short}</p>
           </Card>
 
-          <Card>
+          {/* <Card>
+            <Title>{helm.discourse.name}</Title>
             <A
               href={helm.discourse.link}
               rel='noopener noreferrer nofollow'
@@ -74,10 +76,11 @@ export default function Helm() {
             >
               <Icon icon={helm.discourse.icon} />
             </A>
-            <Title>{helm.discourse.name}</Title>
-          </Card>
+            <p>{helm.discourse.short}</p>
+          </Card> */}
 
           <Card>
+            <Title>{helm.icarus.name}</Title>
             <A
               href={helm.icarus.link}
               rel='noopener noreferrer nofollow'
@@ -85,10 +88,11 @@ export default function Helm() {
             >
               <Icon icon={helm.icarus.icon} />
             </A>
-            <Title>{helm.icarus.name}</Title>
+            <p>{helm.icarus.short}</p>
           </Card>
 
           <Card>
+            <Title>{helm.expeditions.name}</Title>
             <A
               href={helm.expeditions.link}
               rel='noopener noreferrer nofollow'
@@ -96,10 +100,11 @@ export default function Helm() {
             >
               <Icon icon={helm.expeditions.icon} />
             </A>
-            <Title>{helm.expeditions.name}</Title>
+            <p>{helm.expeditions.short}</p>
           </Card>
 
           <Card>
+            <Title>{helm.squadrons.name}</Title>
             <A
               href={helm.squadrons.link}
               rel='noopener noreferrer nofollow'
@@ -107,10 +112,11 @@ export default function Helm() {
             >
               <Icon icon={helm.squadrons.icon} />
             </A>
-            <Title>{helm.squadrons.name}</Title>
+            <p>{helm.squadrons.short}</p>
           </Card>
 
           <Card>
+            <Title>{helm.resources.name}</Title>
             <A
               href={helm.resources.link}
               rel='noopener noreferrer nofollow'
@@ -118,7 +124,7 @@ export default function Helm() {
             >
               <Icon icon={helm.resources.icon} />
             </A>
-            <Title>{helm.resources.name}</Title>
+            <p>{helm.resources.short}</p>
           </Card>
         </Cards>
       </Section>

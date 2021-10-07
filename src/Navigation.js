@@ -51,6 +51,8 @@ const Link1 = styled(Link)`
 `;
 const Span = styled.span`
   border: 5px solid var(--grayD);
+  border-radius: 5px;
+  padding: 1rem;
   &:hover {
     padding: 1rem;
     cursor: pointer;
