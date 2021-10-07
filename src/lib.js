@@ -116,31 +116,37 @@ export default function lib() {
   const helm = {
     discord: {
       name: 'Radio Channels',
+      short: 'Communications platform',
       icon: '/discord_128.webp',
       link: 'https://discord.gg/9yYsQVYR3K',
     },
     discourse: {
       name: 'Central Intelligence',
+      short: 'Long term content',
       icon: '/column_128.webp',
       link: 'https://google.com',
     },
     icarus: {
       name: 'Icarus Force',
+      short: 'Data and documents',
       icon: '/quill_128.webp',
       link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/README.md',
     },
     expeditions: {
       name: 'Expeditions',
+      short: 'Learning adventures',
       icon: '/compass_128.webp',
       link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/expeditions.md',
     },
     squadrons: {
       name: 'Squadrons',
+      short: 'List of pilots',
       icon: '/insignia_128.webp',
       link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/squadrons.md',
     },
     resources: {
       name: 'Resources',
+      short: 'Collected links and courses',
       icon: '/books_128.webp',
       link: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/resources.md',
     },
