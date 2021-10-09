@@ -322,6 +322,16 @@ export default function FAQ() {
                   target='_blank'
                 >
                   Icarus Discord Channel
+                </a>{' '}
+                or drop an email to
+                <a
+                  href={faq.email.url}
+                  title={faq.email.title}
+                  rel='noopener noreferrer nofollow'
+                  target='_blank'
+                >
+                  {' '}
+                  Icarus Initiative
                 </a>
                 .
               </Li>

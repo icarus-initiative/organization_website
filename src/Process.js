@@ -134,7 +134,8 @@ export default function Process() {
                 github team page, a github repo, and a squad discord channel.
               </li>
               <li>
-                If enlisting as a pilot, scroll through{' '}
+                If enlisting as a pilot, the #enlist channel on discord or
+                scroll through{' '}
                 <a
                   href={process.teams.url}
                   title={process.teams.title}
