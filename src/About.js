@@ -88,14 +88,13 @@ export default function About() {
             <CardTitle>Expeditions</CardTitle>
             <CardDescription>
               <li>
-                Build a basic wallet, smart contracts, NFT platform, and RPG
-                game. Where will your squad decide to go?
+                Build a basic wallet, smart contracts (Programs in Solana), NFT
+                platform, and RPG game. Where will your squad decide to go?
               </li>
               <li>Use vetted resources verified by pilots in front.</li>
               <li>Learn to work with Solana SDK and APIs.</li>
               <li>
-                Vote in resources on a limited slots to validate content
-                richness.
+                Vote in resources on limited slots to validate content richness.
               </li>
             </CardDescription>
           </Card>

@@ -81,7 +81,7 @@ export default function lib() {
       title: 'Figment.io Solana Protocol',
     },
     walletGuidelines: {
-      url: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/1st_expedition_project_guildeline.md',
+      url: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/1st_expedition_wallet_guidelines.md',
       title: 'Icarus Initiative Wallet Guidelines',
     },
     twitter: {
@@ -103,6 +103,10 @@ export default function lib() {
     right: {
       name: 'Right Wave Image',
       photo: 'right_wave.jpg',
+    },
+    email: {
+      url: 'mailto:hello@icarusinitiative.com?subject=Icarus Website&body=Hello admin!',
+      title: 'Icarus Initiative Email',
     },
   };
 
