@@ -4,6 +4,7 @@ import About from '../src/About';
 import Enlist from '../src/Enlist';
 import Helm from '../src/Helm';
 import Hero from '../src/Hero';
+import Plans from '../src/Plans';
 import Process from '../src/Process';
 import FAQ from '../src/FAQ';
 import Footer from '../src/Footer';
@@ -19,6 +20,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
+      <Plans />
       <Helm />
       <Process />
       <Enlist />

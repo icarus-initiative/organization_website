@@ -81,7 +81,7 @@ export default function lib() {
       title: 'Figment.io Solana Protocol',
     },
     walletGuidelines: {
-      url: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/1st_expedition_wallet_guidelines.md',
+      url: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/guides/1st_expedition_wallet_guidelines.md',
       title: 'Icarus Initiative Wallet Guidelines',
     },
     twitter: {
@@ -170,6 +170,14 @@ export default function lib() {
     },
   };
 
+  const plans = {
+    battle: {
+      alt: 'Battle Plan',
+      href: 'https://github.com/icarus-initiative/icarus_initiative/blob/main/guides/learning_solana_rust_battle_plan.pdf',
+      image: '/learning_solana_rust_battle_plan.webp',
+    },
+  };
+
   const process = {
     discord: {
       url: 'https://discord.gg/9yYsQVYR3K',
@@ -221,6 +229,7 @@ export default function lib() {
     helm,
     hero,
     navigation,
+    plans,
     process,
     socials,
     Purplerize,
