@@ -76,7 +76,7 @@ export default function Enlist() {
             Ready to take <Purplerize>to the skies?</Purplerize>
           </P>
           <A
-            href='https://discord.gg/9yYsQVYR3K'
+            href='https://discord.gg/D3kx72wJyv'
             alt='Icarus Initiative Discord'
             target='_blank'
           >

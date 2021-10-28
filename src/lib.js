@@ -89,7 +89,7 @@ export default function lib() {
       title: 'Icarus Initiative Twitter',
     },
     discord: {
-      url: 'https://discord.gg/9yYsQVYR3K',
+      url: 'https://discord.gg/D3kx72wJyv',
       title: 'Icarus Initiative Discord',
     },
     repo: {
@@ -122,7 +122,7 @@ export default function lib() {
       name: 'Radio Channels',
       short: 'Communications platform',
       icon: '/discord_128.webp',
-      link: 'https://discord.gg/9yYsQVYR3K',
+      link: 'https://discord.gg/D3kx72wJyv',
     },
     discourse: {
       name: 'Central Intelligence',
@@ -180,7 +180,7 @@ export default function lib() {
 
   const process = {
     discord: {
-      url: 'https://discord.gg/9yYsQVYR3K',
+      url: 'https://discord.gg/D3kx72wJyv',
       title: 'Icarus Initiative Discord',
     },
     figment: {
@@ -207,7 +207,7 @@ export default function lib() {
       title: 'Icarus Initiative Github Organization',
     },
     discord: {
-      url: 'https://discord.gg/9yYsQVYR3K',
+      url: 'https://discord.gg/D3kx72wJyv',
       title: 'Icarus Initiative Discord',
     },
     youtube: {
