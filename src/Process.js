@@ -43,12 +43,18 @@ const Card = styled.div`
   height: auto;
   margin: 1rem;
   padding: 2rem;
-  border-radius: 5px;
   box-shadow: 1px 1px var(--teal);
+  border-radius: 5px;
   border: 1px solid var(--purple);
+  @media (max-width: 768px) {
+    width: 80%;
+    padding: 1rem;
+  }
   @media (max-width: 414px) {
     width: 94%;
-    padding: 1rem;
+  }
+  @media (max-width: 280px) {
+    min-width: 100%;
   }
 `;
 const CardTitle = styled.h3`
