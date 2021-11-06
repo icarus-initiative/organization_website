@@ -12,12 +12,18 @@ const Cards = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  @media (max-width: 375px) {
+    width: 100%;
+  }
 `;
 const Card = styled.div`
   flex: 1 1 32%;
   min-width: 220px;
   width: 32%;
   margin: 2rem auto;
+  @media (max-width: 280px) {
+    min-width: 100%;
+  }
 `;
 const Icon = styled.aside`
   background-image: url(${(props) => props.icon});
@@ -32,17 +38,20 @@ const Icon = styled.aside`
   }
 `;
 const Title = styled.p`
-  padding: 1rem;
   color: var(--teal);
   padding: 1rem;
   margin: 2rem auto;
   width: 80%;
+  text-align: center;
   min-width: 180px;
   max-width: 180px;
-  border-radius: 5px;
   box-shadow: 1px 1px var(--teal);
+  border-radius: 5px;
   border: 1px solid var(--purple);
-  text-align: center;
+  @media (max-width: 280px) {
+    min-width: 120px;
+    max-width: 120px;
+  }
 `;
 const A = styled.a``;
 

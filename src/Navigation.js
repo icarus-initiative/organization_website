@@ -20,20 +20,19 @@ const Section = styled.section`
       margin: 0.5rem 0;
     }
   }
-  @media (max-width: 850px) {
-    * {
-      margin: 0.5rem 0;
-    }
-  }
 `;
 const Logo = styled.section`
   width: 10%;
   max-width: 10%;
   padding-left: 2rem;
-  @media (max-width: 414px) {
+  @media (max-width: 768px) {
     padding: 0;
     display: flex;
     justify-content: center;
+    min-width: 70%;
+    max-width: 70%;
+  }
+  @media (max-width: 414px) {
     min-width: 100%;
     max-width: 100%;
   }
@@ -42,22 +41,28 @@ const NavSection = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 35%;
   font-size: 2rem;
   font-family: var(--nunitoB);
+  @media (max-width: 414px) {
+    font-size: 1.6rem;
+  }
+  @media (max-width: 280px) {
+    font-size: 0.8rem;
+  }
 `;
-const Link1 = styled(Link)`
-  border: 5px solid var(--grayMD);
-`;
+const Link1 = styled(Link)``;
 const Span = styled.span`
-  border: 5px solid var(--grayD);
+  border: 5px solid transparent;
   border-radius: 5px;
   padding: 1rem;
+  margin: 0 1rem;
+  @media (max-width: 414px) {
+    border-bottom: 5px solid var(--purple);
+    margin: 0;
+  }
   &:hover {
-    padding: 1rem;
     cursor: pointer;
     color: var(--teal);
-    border-radius: 5px;
     border: 5px outset var(--purple);
   }
 `;
