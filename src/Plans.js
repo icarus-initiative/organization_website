@@ -5,6 +5,8 @@ import Image from 'next/image';
 
 const Section = styled.section`
   margin: 0 auto;
+  width: 100%;
+  text-align: center;
   @media (max-width: 414px) {
     width: 94%;
   }

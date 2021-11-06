@@ -5,6 +5,9 @@ import lib from './lib';
 const Section = styled.section`
   width: 94%;
   margin: 0 auto;
+  @media (max-width: 375px) {
+    width: 100%;
+  }
 `;
 const H1 = styled.h1`
   font-size: 4.8rem;
@@ -17,25 +20,22 @@ const Cards = styled.div`
 `;
 const Card = styled.div`
   background: var(--grayL);
-  max-width: 606px;
-  height: 450px;
-  margin: 1rem;
-  padding: 1rem;
-  flex: 1 1 397px;
-  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   vertical-align: middle;
   align-self: center;
-  border-radius: 2%;
+  flex: 1 1 397px;
+  max-width: 606px;
+  height: 100%;
+  min-height: 550px;
+  margin: 1rem;
+  padding: 1rem;
   box-shadow: 1px 1px var(--teal);
+  border-radius: 2%;
   border: 1px solid var(--purple);
-  @media (max-width: 1398px) {
-    height: 470px;
-  }
-  @media (max-width: 1330px) {
-    height: 400px;
-  }
-  @media (max-width: 414px) {
-    height: 500px;
+  @media (max-width: 280px) {
+    min-width: 100%;
   }
 `;
 const CardIcon = styled.aside`
@@ -54,6 +54,9 @@ const CardDescription = styled.ul`
   margin: 0 auto;
   width: 94%;
   text-align: left;
+  @media (max-width: 280px) {
+    width: 100%;
+  }
 `;
 
 export default function About() {

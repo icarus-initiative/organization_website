@@ -3,15 +3,19 @@ import lib from './lib';
 
 const { hero, Tealrize } = lib();
 const Section = styled.section`
-  height: 500px;
+  height: 100%;
+  min-height: 500px;
   padding-left: 2rem;
   text-align: left;
   line-height: 2;
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
   background-image: url(${hero.banner.photo});
+  @media (max-width: 414px) {
+    min-height: 600px;
+    min-width: 100%;
+  }
 `;
 const Title = styled.p`
   font-family: var(--nunitoB);

@@ -17,6 +17,9 @@ const SocialsSection = styled.section`
     outline: 0;
     border: none;
   }
+  @media (max-width: 768px) {
+    width: 60%;
+  }
   @media (max-width: 414px) {
     width: 80%;
   }
